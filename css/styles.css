@@ -134,12 +134,22 @@ h1,h2,h3,p,ul {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.section-customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 /* Герой */
 
 .hero {
-    background-color: var(--dark);
     padding-bottom: 192px;
     padding-top: 192px;
+
+    background-color: var(--dark);
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 1600px;
   }
 .hero-title {
     /* padding-top: 192px; */
@@ -161,9 +171,9 @@ h1,h2,h3,p,ul {
     border: 1px solid transparent;
     padding: 16px 32px;
 
-    color: var(--primary-brand);
+    color: var(--pure-white);
     font-family: 'Roboto', sans-serif;
-    background-color: var(--accent);
+    background-color: var(--primary-brand);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -172,6 +182,16 @@ h1,h2,h3,p,ul {
     letter-spacing: 0.04em;
     cursor: pointer;
     text-align: center;
+}
+.btn:hover,
+.btn:focus {
+    color: var(--accent);
+    background-color: var(--primary-brand);
+    border: 1px solid;
+    border-color: var(--primary-brand);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn:active {
     background-color: var(--primary-brand);
@@ -197,9 +217,22 @@ h1,h2,h3,p,ul {
     cursor: pointer;
     text-align: center;  
 }
+.btn-filter:hover,
+.btn-filter:focus {
+    background-color: var(--primary-brand);
+    color: var(--pure-white);
+    border: 1px solid;
+    border-color: var(--primary-brand);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .btn-filter:active {
     background-color: var(--primary-brand);
     color: var(--pure-white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Контент */
 .hided {
@@ -237,6 +270,13 @@ h1,h2,h3,p,ul {
 .team-list {
     display: flex;
     justify-content: space-between;
+}
+.team-list-item {
+    background-color: var(--pure-white);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .works-title {
@@ -341,8 +381,16 @@ h1,h2,h3,p,ul {
     flex-basis: calc((100% - 48px)/3);
 }
 .list-works-item {
+    box-shadow: 0px 1px 6px 0px #2E2F4214;
+
     /* outline: 1px solid red; */
-    /* margin-bottom: 24px; можна використати, щоб збільшити відступи між рядками */
+}
+.list-works-item:hover, 
+.list-works-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+
 }
 /* .list-works-item:nth-child(3n) {
     margin-right: 0;
@@ -355,6 +403,13 @@ h1,h2,h3,p,ul {
 }
 .img-app {
     display: block;
+}
+.img-customers {
+    display: block;
+    width: 168px;
+    border: 1px solid;
+    border-color: var(--subtle-text);
+    border-radius: 4px;
 }
 .title-list-works {
     margin-bottom: 8px;
@@ -373,9 +428,17 @@ h1,h2,h3,p,ul {
 }
 .container-works-item {
     padding: 32px 16px;
+    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     border-bottom: 0.5px solid;
     border-right: 0.5px solid;
-    border-left: 0.5px solid;
+    border-left: 0.5px solid; */
+    
 
-    border-color: var(--light);
+
+    /* border-color: var(--light); */
+    /* border: 0.5px solid #F4F4FD; */
+}
+.customers-list {
+    display: flex;
+    justify-content: space-between;
 }
