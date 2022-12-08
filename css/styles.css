@@ -141,15 +141,22 @@ h1,h2,h3,p,ul {
 /* Герой */
 
 .hero {
+    height: 603px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 192px;
     padding-top: 192px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.2), rgba(0, 0, 255, 0.2)),
+    url(../images/hero.jpg);
+    /* background-image: ; */
 
     background-color: var(--dark);
-    background-image: url(../images/hero.jpg);
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-width: 1600px;
+    
   }
 .hero-title {
     /* padding-top: 192px; */
@@ -404,13 +411,6 @@ h1,h2,h3,p,ul {
 .img-app {
     display: block;
 }
-.img-customers {
-    display: block;
-    width: 168px;
-    border: 1px solid;
-    border-color: var(--subtle-text);
-    border-radius: 4px;
-}
 .title-list-works {
     margin-bottom: 8px;
     
@@ -441,4 +441,12 @@ h1,h2,h3,p,ul {
 .customers-list {
     display: flex;
     justify-content: space-between;
+}
+.icon-customers {
+    display: block;
+    width: 168px;
+    height: 88px;
+    border: 1px solid;
+    border-color: var(--subtle-text);
+    border-radius: 4px;
 }
