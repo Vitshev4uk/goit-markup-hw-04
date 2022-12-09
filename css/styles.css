@@ -142,12 +142,12 @@ h1,h2,h3,p,ul {
 
 .hero {
     height: 603px;
-    max-width: 1600px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 192px;
     padding-top: 192px;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.2), rgba(0, 0, 255, 0.2)),
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero.jpg);
     /* background-image: ; */
 
@@ -449,4 +449,17 @@ h1,h2,h3,p,ul {
     border: 1px solid;
     border-color: var(--subtle-text);
     border-radius: 4px;
+}
+.customers-list:hover {
+    color: var(--primary-brand);
+    ;
+}
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.svg-social-media {
+    width: 16px;
+    height: 16px;
 }
