@@ -450,8 +450,9 @@ h1,h2,h3,p,ul {
     border-color: var(--subtle-text);
     border-radius: 4px;
 }
-.customers-list:hover {
+.icon-customers:hover {
     color: var(--primary-brand);
+    background-color: var(--success)
     ;
 }
 .social-media {
