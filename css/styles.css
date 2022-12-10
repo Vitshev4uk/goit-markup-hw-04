@@ -270,21 +270,21 @@ h1,h2,h3,p,ul {
     display: flex;
     justify-content: space-between;
 }
-.works-list-item::before {
-    display: block;
+.svg-works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     content: "";
-    /* width: 264px; */
+    width: 264px;
     height: 112px;
+    border-radius: 4px;
+
     /* outline: 1px solid red; */
-    /* border-corner-image: url(../images/symbol-defs.svg#icon-instagram); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: var(--light);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
-.iconj::before {
-    background-image: url(../images/img4.jpg);
+.svg-works-list {
+    position: center;
 }
 .apps-list {
     display: flex;
@@ -458,19 +458,23 @@ h1,h2,h3,p,ul {
     display: flex;
     justify-content: space-between;
 }
-.icon-customers {
-    display: block;
+.customer-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 168px;
     height: 88px;
     border: 1px solid;
     border-color: var(--subtle-text);
     border-radius: 4px;
-    fill: red;
 }
-.icon-customers:hover {
-    fill: red;
-    /* background-color: var(--success) */
-    ;
+/* .customer-list-link {
+display: flex;
+align-items: center;
+} */
+.icon-customers {
+    width: 104px;
+    height: 56px;
 }
 
 .social-media {
