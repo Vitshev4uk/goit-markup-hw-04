@@ -270,6 +270,22 @@ h1,h2,h3,p,ul {
     display: flex;
     justify-content: space-between;
 }
+.works-list-item::before {
+    display: block;
+    content: "";
+    /* width: 264px; */
+    height: 112px;
+    /* outline: 1px solid red; */
+    /* border-corner-image: url(../images/symbol-defs.svg#icon-instagram); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--light);
+    padding-bottom: 8px;
+}
+.iconj::before {
+    background-image: url(../images/img4.jpg);
+}
 .apps-list {
     display: flex;
     justify-content: space-between;
@@ -449,12 +465,14 @@ h1,h2,h3,p,ul {
     border: 1px solid;
     border-color: var(--subtle-text);
     border-radius: 4px;
+    fill: red;
 }
 .icon-customers:hover {
-    color: var(--primary-brand);
-    background-color: var(--success)
+    fill: red;
+    /* background-color: var(--success) */
     ;
 }
+
 .social-media {
     display: flex;
     justify-content: space-around;
