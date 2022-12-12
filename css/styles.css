@@ -486,13 +486,8 @@ h1,h2,h3,p,ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 168px;
-    height: 88px;
-    border: 1px solid;
-    border-color: var(--subtle-text);
-    border-radius: 4px;
 }
-.customers-list-link {
+.customer-list-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -501,6 +496,9 @@ h1,h2,h3,p,ul {
     border: 1px solid;
     border-color: var(--subtle-text);
     border-radius: 4px;
+}
+.customer-list-link:hover {
+    color: #31D0AA;
 }
 .icon-customers {
     width: 104px;
