@@ -476,13 +476,18 @@ align-items: center;
     width: 104px;
     height: 56px;
 }
-
 .social-media {
     display: flex;
+    text-align: center;
     justify-content: space-around;
-    align-items: center;
+    margin-top: 12px;
 }
-.svg-social-media {
-    width: 16px;
-    height: 16px;
+.social-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-brand);
+    border-radius: 50%;
 }
