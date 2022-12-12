@@ -327,9 +327,6 @@ h1,h2,h3,p,ul {
     letter-spacing: 0.02em;
     color: var(--text-col);
 }
-.text-block {
-    width: 264px;
-}
 .team-text {
     font-size: 16px;
     line-height: 1.5;
@@ -343,6 +340,15 @@ h1,h2,h3,p,ul {
 }
 
 /* Футер */
+
+.footer-position {
+    display: flex;
+    align-items: baseline;
+}
+.footer-logo-container {
+    width: 264px;
+    margin-right: 120px;
+}
 
 .page-footer {
     background-color: var(--dark);
@@ -454,28 +460,6 @@ h1,h2,h3,p,ul {
     /* border-color: var(--light); */
     /* border: 0.5px solid #F4F4FD; */
 }
-.customers-list {
-    display: flex;
-    justify-content: space-between;
-}
-.customer-list-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 168px;
-    height: 88px;
-    border: 1px solid;
-    border-color: var(--subtle-text);
-    border-radius: 4px;
-}
-/* .customer-list-link {
-display: flex;
-align-items: center;
-} */
-.icon-customers {
-    width: 104px;
-    height: 56px;
-}
 .social-media {
     display: flex;
     text-align: center;
@@ -490,4 +474,71 @@ align-items: center;
     height: 40px;
     background-color: var(--primary-brand);
     border-radius: 50%;
+}
+.svg-social-media {
+    fill: var(--light);
+}
+.customers-list {
+    display: flex;
+    justify-content: space-between;
+}
+.customer-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid;
+    border-color: var(--subtle-text);
+    border-radius: 4px;
+}
+.customers-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid;
+    border-color: var(--subtle-text);
+    border-radius: 4px;
+}
+.icon-customers {
+    width: 104px;
+    height: 56px;
+    fill: var(--subtle-text);
+}
+.icon-customers:hover {
+    fill: var(--primary-brand);
+}
+
+.footer-social-media {
+    width: 208px;
+    height: 80px;
+}
+.footer-title {
+margin-bottom: 16px;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+
+color: var(--pure-white);
+}
+.social-media-footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.social-media-footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--text-col);
+    border-radius: 50%;
+}
+.social-media-footer-link:hover,
+.social-media-footer-link:focus {
+    background-color: var(--success);
 }
