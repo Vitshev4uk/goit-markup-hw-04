@@ -278,13 +278,12 @@ h1,h2,h3,p,ul {
     width: 264px;
     height: 112px;
     border-radius: 4px;
-
-    /* outline: 1px solid red; */
     background-color: var(--light);
     margin-bottom: 8px;
 }
 .svg-works-list {
-    position: center;
+    width: 64px;
+    height: 64px;
 }
 .apps-list {
     display: flex;
