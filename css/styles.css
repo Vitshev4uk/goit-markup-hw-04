@@ -192,7 +192,7 @@ h1,h2,h3,p,ul {
 }
 .btn:hover,
 .btn:focus {
-    color: var(--accent);
+    color: var(--pure-white);
     background-color: var(--primary-brand);
     border: 1px solid;
     border-color: var(--primary-brand);
@@ -493,17 +493,19 @@ h1,h2,h3,p,ul {
     align-items: center;
     width: 168px;
     height: 88px;
+    color: var(--subtle-text);
     border: 1px solid;
     border-color: var(--subtle-text);
     border-radius: 4px;
 }
 .customer-list-link:hover {
-    color: #31D0AA;
+    color: var(--primary-brand);
+    border-color: var(--primary-brand);
 }
 .icon-customers {
     width: 104px;
     height: 56px;
-    fill: var(--subtle-text);
+    fill: currentColor;
 }
 .icon-customers:hover {
     fill: var(--primary-brand);
