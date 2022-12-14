@@ -64,6 +64,10 @@ h1,h2,h3,p,ul {
     letter-spacing: 1.5;
     color: var(--dark);
 }
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--primary-brand);
+}
 .menu-item:not(:last-child) {
     margin-right: 40px;
 }
@@ -497,7 +501,8 @@ h1,h2,h3,p,ul {
     border-color: var(--subtle-text);
     border-radius: 4px;
 }
-.customer-list-link:hover {
+.customer-list-link:hover,
+.customer-list-link:focus {
     color: var(--primary-brand);
     border-color: var(--primary-brand);
 }
@@ -506,10 +511,6 @@ h1,h2,h3,p,ul {
     height: 56px;
     fill: currentColor;
 }
-.icon-customers:hover {
-    fill: var(--primary-brand);
-}
-
 .footer-social-media {
     width: 208px;
     height: 80px;
